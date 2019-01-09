@@ -1,27 +1,19 @@
 module.exports = function ZelekieShortDmgNumbers(mod) {
 
-  // Ponku told me to put this here
-  if (mod.proxyAuthor !== 'caali') {
-    const options = require('./module').options
-    if (options) {
-      const settingsVersion = options.settingsVersion
-      if (settingsVersion) {
-        mod.settings = require('./' + (options.settingsMigrator || 'module_settings_migrator.js'))(mod.settings._version, settingsVersion, mod.settings)
-        mod.settings._version = settingsVersion
-      }
-    }
-  }
-
-  const dmgType = 1 // We assume other dmg types are irrelevant, might not be true.
-
-  // GameId for ponku's broxy
-  let me = null
-  mod.hook('S_LOGIN', 10, event => { me = event.gameId }) // if notCaali ==>...
+  const block_settings = require('./damage_block_preset.js'),
+        dmgType = 1 // We assume other dmg types are irrelevant, might not be true.
 
   // Hook packet responsible for dmg, check wherever it's relative to us, modify it if so
   mod.hook('S_EACH_SKILL_RESULT', 12, event => {
-    if (!mod.settings.enabled) return
-    if ((me === event.source || me === event.owner) && event.type === dmgType) {
+    if (!mod.settings.enabled) return // we disabled :(
+    if ((mod.game.me.gameId === event.source || mod.game.me.gameId === event.owner) && event.type === dmgType) {
+      // It's us pog
+      if (!block_settings[mod.game.me.class].enabled || !block_settings[mod.game.me.class][Math.round(event.skill.id / 10000)]) {
+        // Someone disabled my damage pepehands
+        event.damage = 0
+        return true
+      }
+      // We do the big maffs for making the number smoler here ez
       event.damage = event.damage / BigInt(mod.settings.divisor)
       return true
     }

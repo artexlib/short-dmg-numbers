@@ -1,10 +1,10 @@
 {
-    "disableAutoUpdate": false,
+    "disableAutoUpdate": true,
     "disabled": false,
     "name": "Short Damage Numbers",
     "author": "Leyki",
-    "version": 1.0,
-    "description": "Shortens the visually seen damage dealt number through a complex mathematical operator called division! How small it's up to you.",
+    "version": 1.1,
+    "description": "Shortens the seen damage dealt number through a complex mathematical operation called division! How small it's up to you.",
     "options": {
         "niceName": "SDmgNums",
         "guiName": "Short Damage Numbers",

@@ -312,7 +312,7 @@ module.exports = {
 		21: true, // Recall Scythes
 		23: false // Binding Scythes
 	},
-	"enginner": { // Gunner
+	"engineer": { // Gunner
 		"enabled": true,
 		1: true, // Blast
 		2: true, // Bombardment
@@ -365,7 +365,7 @@ module.exports = {
 		24: true, // 2.54cm (One Inch) Punch
 		26: true // Brawling Roll (Ult)
 	},
-	"assasin": { // Ninja
+	"assassin": { // Ninja
 		"enabled": true,
 		1: true, // Combo Attack
 		2: true, // Shadow Jump
@@ -392,11 +392,11 @@ module.exports = {
 		22: true, // Quick Attack
 		23: true // Inner Harmony
 	},
-	"glaivr": { // Valkyrie
+	"glaiver": { // Valkyrie
 		"enabled": true,
 		1: true, // Slash
 		2: true, // Overhead Slash
-		3: true, // Glaive Slash
+		3: true, // Glaive Strike
 		4: true, // Charge
 		5: true, // Maelstrom
 		6: true, // Leaping Strike

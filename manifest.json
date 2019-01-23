@@ -8,11 +8,10 @@
 			"overwrite": false,
 			"hash": "1eb99cbafb228e75fb337a8c1b155baee9db4857965981e0de5f9badbf30c7ab"
 		},
-		"settings.json": "7f01a2fbee9823621649d80c4141858ca85b9df0cd7e8dfae683ce8ed9825bf5",
-		"README.html": "486f26a1c607a8d17251fea950c4a2af9a817cb91a17f2f4b2efe2c4f850792e"
+		"README.html": "486f26a1c607a8d17251fea950c4a2af9a817cb91a17f2f4b2efe2c4f850792e",
+		"settings.json": "7f01a2fbee9823621649d80c4141858ca85b9df0cd7e8dfae683ce8ed9825bf5"
 	},
 	"defs": {
-		"S_LOGIN": 10,
 		"S_EACH_SKILL_RESULT": 12
 	}
 }

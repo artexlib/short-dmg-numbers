@@ -1,6 +1,6 @@
 {
 	"files": {
-		"index.js": "caaa688a2e7c572adb77624abf264134efc6976a5837d5692a1b4172201cc9f0",
+		"index.js": "58e9bc3521687dfe91ab6094d1908014bbcd5ad7516099029ccb4ffa4f43a96b",
 		"README.md": "e62a0877f60a7468380766185b5fd3dbd41bac46b312c05f37f033fe60e71942",
 		"settings_migrator.js": "49b3fe1e3feeb644b4190d8ba29c130c9441b8bd589df1a50a7fe027ee935fba",
 		"module.json": "c6cd0b1fa86cfc34403bb574ecde28dabdc97110b286fa85ac397a30e55a4e6a",
@@ -8,10 +8,9 @@
 			"overwrite": false,
 			"hash": "0b0bcad0ba0444653958f1f230c8ab951e877d37f13c5dd7af557f20fb945d45"
 		},
-		"README.html": "486f26a1c607a8d17251fea950c4a2af9a817cb91a17f2f4b2efe2c4f850792e",
-		"settings.json": "7f01a2fbee9823621649d80c4141858ca85b9df0cd7e8dfae683ce8ed9825bf5"
+		"README.html": "486f26a1c607a8d17251fea950c4a2af9a817cb91a17f2f4b2efe2c4f850792e"
 	},
 	"defs": {
-		"S_EACH_SKILL_RESULT": 12
+		"S_EACH_SKILL_RESULT": 13
 	}
 }

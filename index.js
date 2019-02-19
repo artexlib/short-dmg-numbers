@@ -1,12 +1,12 @@
 module.exports = function ZelekieShortDmgNumbers(mod) {
 
   const block_settings = require('./damage_block_preset.js'),
-        dmgType = 1 // We assume other dmg types are irrelevant, might not be true.
+        Type = 1 // We assume other dmg types are irrelevant, might not be true.
 
   // Hook packet responsible for dmg, check wherever it's relative to us, modify it if so
-  mod.hook('S_EACH_SKILL_RESULT', 12, event => {
+  mod.hook('S_EACH_SKILL_RESULT', 13, event => {
     if (!mod.settings.enabled) return // we disabled :(
-    if ((mod.game.me.gameId === event.source || mod.game.me.gameId === event.owner) && event.type === dmgType) {
+    if ((mod.game.me.gameId === event.source || mod.game.me.gameId === event.owner) && event.type === Type) {
       // It's us pog
       if (!block_settings[mod.game.me.class].enabled || !block_settings[mod.game.me.class][Math.round(event.skill.id / 10000)]) {
         // Someone disabled my damage pepehands

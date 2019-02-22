@@ -10,11 +10,11 @@ module.exports = function ZelekieShortDmgNumbers(mod) {
       // It's us pog
       if (!block_settings[mod.game.me.class].enabled || !block_settings[mod.game.me.class][Math.round(event.skill.id / 10000)]) {
         // Someone disabled my damage pepehands
-        event.damage = 0
+        event.value = 0
         return true
       }
       // We do the big maffs for making the number smoler here ez
-      event.damage = event.damage / BigInt(mod.settings.divisor)
+      event.value = event.value / BigInt(mod.settings.divisor)
       return true
     }
   })

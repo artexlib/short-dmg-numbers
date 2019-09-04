@@ -385,18 +385,25 @@ blockquote {
 
 </head>
 <body>
-<h3 id="what-it-do">What it do</h3>
-<p>It divides the damage you deal by the value set in the script, by the default being <code>10000</code>. This can be changed to your liking via editting the <code>divisor</code> value found in <code>tera-short-dmg-numbers\settings.json</code>. The module can be set to load disabled by setting <code>enabled</code> to false as well. There's also in-game commands, wow.</p>
-<p>There's also a preset file for completely blocking damage from certain skills, booling them to <code>false</code> will do the trick. <code>tera-short-dmg-numbers\damage_block_preset.js</code></p>
+<h3 id="intro"><strong>Intro</strong></h3>
+<p>Divides the damage you deal by the value set in the script, with the default one being <code>1000</code> for pve and <code>1</code> for pvp. The core idea is to free up space from the screen to actually be able to see what's going on. The module does not work below lvl 65 as damage is already rather low.</p>
+<h4 id="settings">Settings</h4>
+<ul>
+<li>Edit <code>settings.json</code>:
+<ul>
+<li><code>enabled</code> - it does the obvious.</li>
+<li><code>pvp_divisor</code> - pvp divisor to be used.</li>
+<li><code>pve_divisor</code> - pve divisor to be used.</li>
+</ul>
+</li>
+</ul>
 <h4 id="in-game-commands">In-game Commands</h4>
 <ul>
-<li><em><strong><code>smn</code></strong></em>  <em><code>[on/off]</code></em> turns on and off the whole module functionalities.</li>
+<li><em><strong><code>smn</code></strong></em>  <em><code>[on/off]</code></em> - turns on and off the module.</li>
+<li><em><strong><code>smn</code></strong></em> <em><code>pve</code></em> <em><code>divisor(number)</code></em> - sets a new pve divisor.</li>
+<li><em><strong><code>smn</code></strong></em> <em><code>pvp</code></em>  <em><code>divisor(number)</code></em> - sets a new pvp divisor.</li>
 </ul>
 <h6 id=""></h6>
-<ul>
-<li><em><strong><code>smn</code></strong></em> <em><code>divisor</code> <code>new divisor value(number)</code></em> sets a new damage divisor.</li>
-</ul>
-<p><em>Note: Settings will be autosaved if using Caali's proxy when exitting the game. I have no idea why it's broken with pony's proxy, will probably fix it later /shrug.</em></p>
 
 </body>
 </html>

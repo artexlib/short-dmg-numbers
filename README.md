@@ -1,13 +1,17 @@
-### What it do
+### **Intro**
 
-It divides the damage you deal by the value set in the script, by the default being `10000`. This can be changed to your liking via editting the `divisor` value found in `tera-short-dmg-numbers\settings.json`. The module can be set to load disabled by setting `enabled` to false as well. There's also in-game commands, wow.
+Divides the damage you deal by the value set in the script, with the default one being `1000` for pve and `1` for pvp. The core idea is to free up space from the screen to actually be able to see what's going on. The module does not work below lvl 65 as damage is already rather low.
 
-There's also a preset file for completely blocking damage from certain skills, booling them to `false` will do the trick. `tera-short-dmg-numbers\damage_block_preset.js`
+#### Settings
+
+* Edit `settings.json`:
+  * `enabled` - it does the obvious. 
+  * `pvp_divisor` - pvp divisor to be used.
+  * `pve_divisor` - pve divisor to be used.
 
 #### In-game Commands
 
-* ***`smn`***  *`[on/off]`* turns on and off the whole module functionalities.
+* ***`smn`***  *`[on/off]`* - turns on and off the module.
+* ***`smn`*** *`pve`* *`divisor(number)`* - sets a new pve divisor.
+* ***`smn`*** *`pvp`*  *`divisor(number)`* - sets a new pvp divisor.
 ######
-* ***`smn`*** *`divisor` `new divisor value(number)`* sets a new damage divisor.
-
-*Note: Settings will be autosaved if using Caali's proxy when exitting the game. I have no idea why it's broken with pony's proxy, will probably fix it later /shrug.*

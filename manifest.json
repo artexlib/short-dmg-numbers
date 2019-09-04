@@ -1,16 +1,14 @@
 {
 	"files": {
-		"index.js": "91d82d03a52033639492f59b91f45e3e22ff8334205ddc426fb6abdc299ebc56",
-		"README.md": "e62a0877f60a7468380766185b5fd3dbd41bac46b312c05f37f033fe60e71942",
-		"settings_migrator.js": "49b3fe1e3feeb644b4190d8ba29c130c9441b8bd589df1a50a7fe027ee935fba",
-		"module.json": "c6cd0b1fa86cfc34403bb574ecde28dabdc97110b286fa85ac397a30e55a4e6a",
-		"damage_block_preset.js": {
-			"overwrite": false,
-			"hash": "0b0bcad0ba0444653958f1f230c8ab951e877d37f13c5dd7af557f20fb945d45"
-		},
-		"README.html": "486f26a1c607a8d17251fea950c4a2af9a817cb91a17f2f4b2efe2c4f850792e"
+		"index.js": "a466b2edbe5ae25bd7d5145812512402b89afe85d5e508b2c75a761a82ecdad5",
+		"README.md": "3a783e2287c1eab5606fec65456f7831f139bddf48efbfb7d4a6535f93f2efdf",
+		"settings_migrator.js": "dc6b929a4f77d8bbcfaf6ae9141fc2f8d14ef677cfd550bf55a9c44894db2ee9",
+		"module.json": "73dd8d8a3a7bb6255b2b08957f034c1686d5125d42a5623ff344566235dba28a",
+		"README.html": "70a6925fce295331eb7e5d746310fb5c1e6ec4ac4933d0d28a7b7cd8313cd9e5"
 	},
 	"defs": {
-		"S_EACH_SKILL_RESULT": 13
+		"S_EACH_SKILL_RESULT": 13,
+		"S_SPAWN_USER": 15,
+		"S_DESPAWN_USER": 3
 	}
 }

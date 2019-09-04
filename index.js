@@ -5,7 +5,6 @@ module.exports = function ShortDmgNumbers(mod) {
 
 	mod.hook('S_SPAWN_USER', 15, event => {
 		players[event.gameId] = true
-		console.log(players)
 	})
 	mod.hook('S_DESPAWN_USER', 3, event => {
 		delete players[event.gameId]

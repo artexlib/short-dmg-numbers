@@ -11,7 +11,7 @@ module.exports = function ShortDmgNumbers(mod) {
 	})
 	mod.game.me.on('change_zone', (zone, quick) => players = {})
 
-	mod.hook('S_EACH_SKILL_RESULT', 13, { order: 100 }, event => {
+	mod.hook('S_EACH_SKILL_RESULT', mod.majorPatchVersion >= 86 ? 14 : 13, { order: 100 }, event => {
 		if (!mod.settings.enabled || mod.game.me.level < 65) return
 		if ((mod.game.me.gameId === event.source || mod.game.me.gameId === event.owner) && event.type === DmgType) {
 			let smolDmg = 0n

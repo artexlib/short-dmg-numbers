@@ -4,9 +4,9 @@
     "name": "short-damage-numbers",
     "author": "Leyki",
     "version": 1.1,
-    "description": "Shortens the damage dealt via dividing it to free up vital screen space.",
+    "description": "Divides the damage you deal by the value set in the script, with the default one being 1000 for pve and 1 for pvp. The core idea is to free up space from the screen to actually be able to see what's going on. The module does not work below lvl 65 as damage is already rather low.",
     "options": {
-        "niceName": "smol dmg",
+        "cliName": "smol dmg",
         "guiName": "smol dmg",
         "settingsVersion": 2,
         "settingsFile": "settings.json",

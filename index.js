@@ -1,4 +1,4 @@
-module.exports = function ShortDmgNumbers(mod) {
+exports.NetworkMod = function ShortDmgNumbers(mod) {
 
 	const DmgType = 1
 	let players = {}

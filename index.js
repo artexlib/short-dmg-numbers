@@ -3,7 +3,7 @@ exports.NetworkMod = function ShortDmgNumbers(mod) {
 	const DmgType = 1
 	let players = {}
 
-	mod.hook('S_SPAWN_USER', 15, event => {
+	mod.hook('S_SPAWN_USER', 16, event => {
 		players[event.gameId] = true
 	})
 	mod.hook('S_DESPAWN_USER', 3, event => {

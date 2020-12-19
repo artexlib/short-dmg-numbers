@@ -12,5 +12,5 @@
         "settingsFile": "settings.json",
         "settingsMigrator": "settings_migrator.js"
     },
-    "servers": ["https://raw.githubusercontent.com/Leyki/tera-short-dmg-numbers/master/", "https://raw.githubusercontent.com/Leyki/short-dmg-numbers/master/"]
+    "servers": ["https://raw.githubusercontent.com/Leyki/short-dmg-numbers/master/"]
 }

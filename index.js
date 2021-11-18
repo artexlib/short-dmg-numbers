@@ -3,7 +3,7 @@ exports.NetworkMod = function ShortDmgNumbers(mod) {
 	const DmgType = 1
 	let players = {}
 
-	mod.hook('S_SPAWN_USER', 16, event => {
+	mod.hook('S_SPAWN_USER', 17, event => {
 		players[event.gameId] = true
 	})
 	mod.hook('S_DESPAWN_USER', 3, event => {
@@ -11,7 +11,7 @@ exports.NetworkMod = function ShortDmgNumbers(mod) {
 	})
 	mod.game.me.on('leave_loading_screen', () => players = {})
 
-	mod.hook('S_EACH_SKILL_RESULT', 14, { order: 100 }, event => {
+	mod.hook('S_EACH_SKILL_RESULT', 15, { order: 100 }, event => {
 		if (!mod.settings.enabled || mod.game.me.level < 65) return
 		if ((mod.game.me.gameId === event.source || mod.game.me.gameId === event.owner) && event.type === DmgType) {
 			let smolDmg = 0n

@@ -2,7 +2,7 @@
     "disableAutoUpdate": false,
     "disabled": false,
     "name": "short-damage-numbers",
-    "author": "Leyki",
+    "author": "Leyki / upd ArtexLib",
     "version": 1.1,
     "description": "Divides damage dealt by a value of choice to free up some screen space. This is active only past level 64.",
     "options": {
@@ -12,5 +12,6 @@
         "settingsFile": "settings.json",
         "settingsMigrator": "settings_migrator.js"
     },
-    "servers": ["https://raw.githubusercontent.com/Leyki/short-dmg-numbers/master/"]
+    "servers": ["https://raw.githubusercontent.com/artexlib/short-dmg-numbers/master/"],
+    "supportUrl": "https://github.com/artexlib/short-dmg-numbers/issues/"
 }
